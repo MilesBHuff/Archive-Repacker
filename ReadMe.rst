@@ -47,8 +47,8 @@ Usage
 
 - ``-Dir`` is where you specify a directory whose archives you'd like to repack.
 - ``-Pause`` makes the script pause after each extraction.  This can be very
-useful -- you can use this break period to run texture optimizers, for example.
-This can save you even more space.
+  useful -- you can use this break period to run texture optimizers, for example.
+  This can save you even more space.
 - ``-Help`` prints help text.
 
 If you don't know how to run PowerShell scripts, there are many tutorials out
