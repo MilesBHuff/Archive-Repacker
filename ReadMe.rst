@@ -24,16 +24,20 @@ less-than-stellar compression strengths.
 
 As a case-in-point, I ran this script on each folder in
 `%appdata\Roaming\Vortex\Downloads`.  My SkyrimSE folder (minus .rar files) went
-from 26.62GiBs, to ?GiBs -- a savings of ?GiBs, or about 4%!  While 4% may not
-seem like much, that's because most of that 26.62GiBs was already maximally
-compressed.  There were some archives with as much as 30% or more in space
-savings.
+from 26.6GiBs, to 25.1GiBs -- a savings of 1.5GiBs, or about 6%!  While 6% may
+not seem like much, there were several archives that were over 25% smaller after
+recompression.  The reason the total number was 6% instead of 25%, is because
+most of that 26.6GiBs was [thankfully] already maximally compressed.  Between
+Vortex's SkyrimSE and Skyrim downloads folders, and my user downloads folder,
+I saved probably about 2GiBs of space without deleting anything.
 
-There are, of course, times when a weaker compression algorithm is actually
-better -- typically for data that needs to be accessed frequently.  But when
-you have a lot of archived data that you don't want to delete, but that's mostly
-just collecting dust, repackaging it with a stronger compression algorithm can
-be a great thing to do.
+"Why would anyone ever use a weak compression algorithm?", you might be wondering.
+Well, there are actually times when a weaker compression algorithm is useful --
+typically for data that needs to be accessed frequently (A really good example of
+a use-case for light compression, is transparent, partition-level compression.).
+But when you have a lot of archived data that you don't want to delete and that's
+mostly just collecting dust, repackaging it with a stronger compression algorithm
+can be a great thing to do.
 
 Usage
 --------------------------------------------------------------------------------
@@ -99,4 +103,5 @@ repacking already-optimized archives.  This will require the removal of the `-st
 option, which sets the archive's modification date to that of its files.
 
 This script is unlikely to gain support for .rar files.  If I do ever add support,
-I will probably be unable to include the binary for the rar archiver.
+I will probably be unable to include the binary for the rar archiver, due to its
+proprietary license.
